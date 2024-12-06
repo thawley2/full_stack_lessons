@@ -1,21 +1,26 @@
 /* Write your code here: */
-h1, h2 {
+h1, h2 { 
+  /* Combine multiple selectors with a comma */
   color: blueviolet
 }
 
-.box li {
+.box li { 
+  /* Selects all li elements in a container with the class .box */
   color: blue
 }
 
 div > p {
+  /* (Direct inheritence) Selects all p elements that are directly under a div element */
   color: firebrick;
   text-decoration: none;
 }
 
 div.box li.done {
+  /* Can combine selectors, so we are selecting all li elements with the class of done that are within any div with the class box */
   color: green;
 }
 
 ul p.done {
+  /* Selecting all <p> elements with the class 'done' that are within a <ul> element */
   font-size: 0.5rem;
 }
