@@ -5,6 +5,24 @@
   <title>CSS Positioning Exercise</title>
   <style>
     /* Write your code here */
+    .blue-box {
+      background-color: blue;
+      height: 300px;
+      width: 500px;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+    }
+    .red-circle {
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      position: relative;
+      top: 150px;
+      left: 250px;
+    }
+
   </style>
 </head>
 
@@ -17,3 +35,9 @@
 </body>
 
 </html>
+
+<!-- Static positioning is the default -->
+<!-- Relative position is the position relative to the default position (Static) -->
+<!-- Absolute Position is relative to nearest positioned ancestor with a position other than static most likely relative or top left corner of the webpage -->
+<!-- z-index is the position on the z axis all things defualt to z-index: 0 -->
+<!-- Fixed Positioning defualts to the upper left corner of the browser (scrolling will keep the thing in the same spot) -->
