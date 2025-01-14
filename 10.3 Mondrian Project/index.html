@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      display: grid;
+      grid-template: 414px 130px 155px 22px / 320px 198px 153px 50px;
+      gap: 9px;
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+    }
+    :root {
+      --standard-bg-color: #f0f0f0;
+    }
+    .standard {
+      background-color: var(--standard-bg-color);
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .large_span {
+      background-color: var(--standard-bg-color);
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .medium_span {
+      background-color: var(--standard-bg-color);
+      grid-row: span 2;
+    }
+    .medium_span2 {
+      background-color: var(--standard-bg-color);
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid;
+    }
+    .thin-standard {
+      background-color: var(--standard-bg-color);
+      grid-row: span 2;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .black {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex-container">
+    <div class="container">
+      <div class="red"></div>  
+      <div class="large_span"></div>
+      <div class="medium_span"></div>
+      <div class="medium_span2"></div>
+      <div class="blue"></div>
+      <div class="thin-standard"></div>
+      <div class="standard"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </div>
+</body>
+
+</html>
